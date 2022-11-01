@@ -1,6 +1,8 @@
 import "./App.css";
-import myPhoto from "./photo.jpg"
-
+import myPhoto from "./photo.jpg";
+import singing from "./singing.jpeg";
+import embroidery from "./embroidery.jpg";
+import bindge from "./bindge-watching.jpg";
 
 function App() {
   const user = {
@@ -35,20 +37,17 @@ function App() {
           <li className="list-item">
             My hobbies are:
             <div>
-                <ul className="hobbies">
-                  {user.hobbies.map((hobby) => (
-                    <li key={hobby}>{hobby}</li>
-                  ))}
-                </ul>
-                </div>
-              <div className="hobbies-img">
-                <img className="hobby-img" src="./src/singing.jpeg"></img>
-                <img className="hobby-img" src="./src/embroidery.jpg"></img>
-                <img
-                  className="hobby-img"
-                  src="./src/bindge-watching.jpg"
-                ></img>
-              </div>
+              <ul className="hobbies">
+                {user.hobbies.map((hobby) => (
+                  <li key={hobby}>{hobby}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="hobbies-img">
+              <img className="hobby-img" src={singing}></img>
+              <img className="hobby-img" src={embroidery}></img>
+              <img className="hobby-img" src={bindge}></img>
+            </div>
           </li>
           <li className="list-item">
             I decided to switch to front-end when the war started, although I
