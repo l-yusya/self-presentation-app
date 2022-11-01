@@ -1,4 +1,6 @@
 import "./App.css";
+import myPhoto from "./photo.jpg"
+
 
 function App() {
   const user = {
@@ -19,7 +21,7 @@ function App() {
 
         <p className="text">Get to know me a bit!</p>
         <p className="text">My name is {user.name}, nice to meet you!</p>
-        <img className="photo" src="./src/photo.jpg"></img>
+        <img className="photo" src={myPhoto}></img>
         <p className="text">Fun facts about me:</p>
         <ul>
           <li className="list-item">
